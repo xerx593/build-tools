@@ -136,9 +136,7 @@
             <excludes>**/mvnw*,**/.vscode/**/*,**/*.project,**/.mvn/**/*,**/.git/**/*,**/.idea/**/*,**/target/**/*,**/*nb-configuration.xml</excludes>
             <configLocation>${basedir}/src/main/resources/org/xerxcorps/buildtools/checkstyle/xerx_checks.xml</configLocation>
             <suppressionsLocation>${basedir}/src/main/resources/org/xerxcorps/buildtools/checkstyle/xerx_suppressions.xml</suppressionsLocation>
-            <!--<consoleOutput>true</consoleOutput>-->
             <failOnViolation>true</failOnViolation>
-            <!--<failsOnError>true</failsOnError>-->
           </configuration>
           <executions>
             <execution>
