@@ -51,10 +51,16 @@
     </developer>
   </developers>
   <scm>
+    <connection>scm:git:https://github.com/xerx593/build-tools.git</connection>
     <developerConnection>scm:git:https://github.com/xerx593/build-tools.git</developerConnection>
+    <url>https://github.com/xerx593/build-tools/</url>
     <tag>build-tools-1.0.0</tag>
   </scm>
   <distributionManagement>
+    <site>
+      <id>github</id>
+      <url>scm:git:https://github.com/xerx593/build-tools.git</url>
+    </site>
     <snapshotRepository>
       <id>local-remote</id>
       <url>file://C:/DEV/maven_repo/</url>
@@ -73,6 +79,13 @@
   <build>
     <pluginManagement>
       <plugins>
+        <plugin>
+          <artifactId>maven-scm-publish-plugin</artifactId>
+          <version>3.1.0</version>
+          <configuration>
+            <scmBranch>gh-pages</scmBranch>
+          </configuration>
+        </plugin>
         <plugin>
           <artifactId>maven-gpg-plugin</artifactId>
           <version>3.0.1</version>
