@@ -57,11 +57,11 @@
   <distributionManagement>
     <snapshotRepository>
       <id>local-remote</id>
-      <url>~/.m2/repository</url>
+      <url>file://C:/DEV/maven_repo/</url>
     </snapshotRepository>
     <repository>
       <id>local-remote</id>
-      <url>~/.m2/repository</url>
+      <url>file://C:/DEV/maven_repo/</url>
     </repository>
   </distributionManagement>
   <properties>
