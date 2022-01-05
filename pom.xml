@@ -23,7 +23,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.xerxcorps</groupId>
   <artifactId>build-tools</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.0-SNAPSHOT</version>
   <name>Xerxcorps Build Tools</name>
   <description>Build Tools for Xerxcorps Projects</description>
   <url>https://github.com/xerx593/xerxcorps-project/${project.artifactId}</url>
