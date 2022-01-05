@@ -59,7 +59,7 @@
   <distributionManagement>
     <site>
       <id>github</id>
-      <url>scm:git:https://github.com/xerx593/build-tools.git</url>
+      <url>https://github.com/xerx593/build-tools.git</url>
     </site>
     <snapshotRepository>
       <id>local-remote</id>
@@ -115,7 +115,7 @@
           <artifactId>maven-release-plugin</artifactId>
           <version>3.0.0-M4</version>
           <configuration>
-          <preparationGoals>clean verify site site:stage scm-publish:publish-scm</preparationGoals>
+          <preparationGoals>clean verify site site:stage</preparationGoals>
           </configuration>
         </plugin>
         <plugin>
