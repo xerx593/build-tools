@@ -54,7 +54,7 @@
     <connection>scm:git:https://github.com/xerx593/build-tools.git</connection>
     <developerConnection>scm:git:https://github.com/xerx593/build-tools.git</developerConnection>
     <url>scm:git:https://github.com/xerx593/build-tools/</url>
-    <tag>build-tools-1.0.0</tag>
+    <tag>build-tools-1.0.1</tag>
   </scm>
   <distributionManagement>
     <site>
@@ -74,7 +74,7 @@
     <project.build.sourceEncoding>ASCII</project.build.sourceEncoding>
     <maven.compiler.target>17</maven.compiler.target>
     <maven.compiler.source>17</maven.compiler.source>
-    <pmd.version>6.41.0</pmd.version>
+    <pmd.version>6.50.0</pmd.version>
   </properties>
   <build>
     <pluginManagement>
@@ -101,33 +101,33 @@
         </plugin>
         <plugin>
           <artifactId>maven-antrun-plugin</artifactId>
-          <version>3.0.0</version>
+          <version>3.1.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-assembly-plugin</artifactId>
-          <version>3.3.0</version>
+          <version>3.4.2</version>
         </plugin>
         <plugin>
           <artifactId>maven-dependency-plugin</artifactId>
-          <version>3.2.0</version>
+          <version>3.3.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-release-plugin</artifactId>
-          <version>3.0.0-M4</version>
+          <version>3.0.0-M6</version>
           <configuration>
             <preparationGoals>clean verify site site:stage scm-publish:publish-scm</preparationGoals>
           </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
-          <version>3.10.0</version>
+          <version>4.0.0-M3</version>
           <configuration>
             <skipDeploy>true</skipDeploy>
           </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>3.1.2</version>
+          <version>3.4.1</version>
         </plugin>
         <plugin>
           <artifactId>maven-changelog-plugin</artifactId>
@@ -135,7 +135,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-checkstyle-plugin</artifactId>
-          <version>3.1.2</version>
+          <version>3.2.0</version>
           <configuration>
             <sourceDirectories>${basedir}</sourceDirectories>
             <includes>**/*</includes>
@@ -157,7 +157,7 @@
             <dependency>
               <groupId>com.puppycrawl.tools</groupId>
               <artifactId>checkstyle</artifactId>
-              <version>9.2.1</version>
+              <version>10.3.4</version>
             </dependency>
             <dependency>
               <groupId>io.spring.nohttp</groupId>
@@ -167,13 +167,13 @@
             <dependency>
               <groupId>io.spring.javaformat</groupId>
               <artifactId>spring-javaformat-checkstyle</artifactId>
-              <version>0.0.29</version>
+              <version>0.0.34</version>
             </dependency>
           </dependencies>
         </plugin>
         <plugin>
           <artifactId>maven-pmd-plugin</artifactId>
-          <version>3.15.0</version>
+          <version>3.19.0</version>
           <dependencies>
             <dependency>
               <groupId>net.sourceforge.pmd</groupId>
@@ -220,31 +220,31 @@
         </plugin>
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>3.2.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.1</version>
+          <version>3.10.1</version>
         </plugin>
         <plugin>
           <artifactId>maven-deploy-plugin</artifactId>
-          <version>3.0.0-M1</version>
+          <version>3.0.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
-          <version>3.0.0-M1</version>
+          <version>3.0.1</version>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>3.2.0</version>
+          <version>3.2.2</version>
         </plugin>
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
-          <version>3.2.0</version>
+          <version>3.3.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.0.0-M5</version>
+          <version>3.0.0-M7</version>
         </plugin>
       </plugins>
     </pluginManagement>
